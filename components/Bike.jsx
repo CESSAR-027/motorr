@@ -52,7 +52,7 @@ const Bike = ({ bike }) => {
                 </div>
             </div>
 
-            <h5 className='text-gray-400 font-semibold mb-2' >{bike.categories[0].name} bike</h5>
+            <h5 className='text-gray-400 font-semibold mb-2' >{bike.categories[0].name} </h5>
             <h4 className='mb-1'>{bike.name}</h4>
             <div className='text-lg font-bold text-accent'> $ {bike.price}</div>
         </div>

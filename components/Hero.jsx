@@ -39,7 +39,7 @@ const Hero = () => {
                         {/* img */}
                         <div className='hidden xl:flex'>
                            <Image 
-                           src={'/hero/bike.png'}
+                           src={'/hero/portada.png'}
                            width={760}
                            height={480}
                            alt=''

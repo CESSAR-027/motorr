@@ -39,19 +39,19 @@ const BikeCategories = ({ bikes }) => {
                                 <label htmlFor='all'>All</label>
                             </div>
                             <div className='flex items-center space-x-2'>
-                                <RadioGroupItem value='road' id='road'
-                                    onClick={() => setCategory('road')} />
-                                <label htmlFor='road'>ROAD</label>
+                                <RadioGroupItem value='auto' id='auto'
+                                    onClick={() => setCategory('auto')} />
+                                <label htmlFor='auto'>AUTOMÓVIL</label>
                             </div>
                             <div className='flex items-center space-x-2'>
-                                <RadioGroupItem value='professional' id='professional'
-                                    onClick={() => setCategory('professional')} />
-                                <label htmlFor='professional'>PROFESSIONAL</label>
+                                <RadioGroupItem value='camioneta' id='camioneta'
+                                    onClick={() => setCategory('camioneta')} />
+                                <label htmlFor='camioneta'>CAMIONETA</label>
                             </div>
                             <div className='flex items-center space-x-2'>
-                                <RadioGroupItem value='extreme' id='extreme'
-                                    onClick={() => setCategory('extreme')} />
-                                <label htmlFor='extreme'>EXTREME</label>
+                                <RadioGroupItem value='deportivo' id='deportivo'
+                                    onClick={() => setCategory('deportivo')} />
+                                <label htmlFor='deportivo'>DEPORTIVO</label>
                             </div>
                         </RadioGroup>
                         {/* price slider */}
@@ -70,9 +70,9 @@ const BikeCategories = ({ bikes }) => {
                             </div>
                             
                             <Slider
-                                defaultValue={[900]}
-                                max={1000}
-                                step={1}
+                                defaultValue={[5000]}
+                                max={300000}
+                                step={500}
                                 onValueChange={(val)=>setPrice(val[0])} />
                         </div>
                     </aside>
